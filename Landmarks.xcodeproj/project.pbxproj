@@ -31,6 +31,7 @@
 		52D0DD1A2A0D4C52003BB3C2 /* HikeGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0DD162A0D4C52003BB3C2 /* HikeGraph.swift */; };
 		52D0DD1B2A0D4C52003BB3C2 /* HikeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0DD172A0D4C52003BB3C2 /* HikeDetail.swift */; };
 		52D0DD1C2A0D4C52003BB3C2 /* HikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0DD182A0D4C52003BB3C2 /* HikeView.swift */; };
+		52D0DD1E2A0D7BF0003BB3C2 /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0DD1D2A0D7BF0003BB3C2 /* CategoryHome.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		52D0DD162A0D4C52003BB3C2 /* HikeGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeGraph.swift; sourceTree = "<group>"; };
 		52D0DD172A0D4C52003BB3C2 /* HikeDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeDetail.swift; sourceTree = "<group>"; };
 		52D0DD182A0D4C52003BB3C2 /* HikeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeView.swift; sourceTree = "<group>"; };
+		52D0DD1D2A0D7BF0003BB3C2 /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				52D0DD022A0CB180003BB3C2 /* Helpers */,
 				52D0DD012A0CB150003BB3C2 /* Landmarks */,
 				52D0DD092A0D423B003BB3C2 /* Badges */,
+				52D0DD1D2A0D7BF0003BB3C2 /* CategoryHome.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52D0DCCA2A0C691F003BB3C2 /* ContentView.swift in Sources */,
+				52D0DD1E2A0D7BF0003BB3C2 /* CategoryHome.swift in Sources */,
 				52D0DD1A2A0D4C52003BB3C2 /* HikeGraph.swift in Sources */,
 				52D0DD0F2A0D45FC003BB3C2 /* Badge.swift in Sources */,
 				52D0DCF72A0C77E2003BB3C2 /* ModelData.swift in Sources */,
