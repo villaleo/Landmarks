@@ -9,12 +9,25 @@ import SwiftUI
 
 struct LandmarkList: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+      NavigationStack {
+        List(landmarks) { landmark in
+          NavigationLink {
+            LandmarkDetail(landmark: landmark)
+          } label: {
+            LandmarkRow(landmark: landmark)
+          }
+        }
+        .navigationTitle("Landmarks")
+      }
     }
 }
 
 struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
+      ForEach(["iPad Air (5th generation)", "iPhone 14 Pro"], id: \.self) { deviceName in
         LandmarkList()
+          .previewDevice(.init(rawValue: deviceName))
+          .previewDisplayName(deviceName)
+      }
     }
 }
