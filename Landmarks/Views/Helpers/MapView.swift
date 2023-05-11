@@ -9,8 +9,9 @@ import MapKit
 import SwiftUI
 
 struct MapView: View {
-  var coordinate: CLLocationCoordinate2D
   @State private var region: MKCoordinateRegion = .init()
+  
+  var coordinate: CLLocationCoordinate2D
   
   var body: some View {
     Map(coordinateRegion: $region)
