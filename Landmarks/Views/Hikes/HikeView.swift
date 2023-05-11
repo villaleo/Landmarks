@@ -7,6 +7,18 @@
 
 import SwiftUI
 
+extension AnyTransition {
+  static var slideAndToss: Self {
+    .asymmetric(
+      insertion: .move(edge: .leading).combined(with: .opacity),
+      removal:
+        .move(edge: .trailing)
+        .combined(with: .move(edge: .top))
+        .combined(with: opacity)
+    )
+  }
+}
+
 struct HikeView: View {
   @State private var showDetail = false
   
@@ -41,6 +53,7 @@ struct HikeView: View {
       
       if showDetail {
         HikeDetail(hike: hike)
+          .transition(.slideAndToss)
       }
     }
   }
@@ -49,7 +62,7 @@ struct HikeView: View {
 struct HikeView_Previews: PreviewProvider {
   static var previews: some View {
     VStack {
-      HikeView(hike: ModelData().hikes[0])
+      HikeView(hike: ModelData().hikes.first!)
         .padding()
       Spacer()
     }
