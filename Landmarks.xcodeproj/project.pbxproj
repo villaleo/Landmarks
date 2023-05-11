@@ -119,7 +119,6 @@
 			children = (
 				52D0DD022A0CB180003BB3C2 /* Helpers */,
 				52D0DD012A0CB150003BB3C2 /* Landmarks */,
-				52D0DD032A0D3883003BB3C2 /* HexagonParameters.swift */,
 				52D0DD092A0D423B003BB3C2 /* Badges */,
 			);
 			path = Views;
@@ -142,6 +141,7 @@
 				52D0DCD52A0C6E54003BB3C2 /* CircleImage.swift */,
 				52D0DCD72A0C6F75003BB3C2 /* MapView.swift */,
 				52D0DCFF2A0CAFB6003BB3C2 /* FavoritesButton.swift */,
+				52D0DD032A0D3883003BB3C2 /* HexagonParameters.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
