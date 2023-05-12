@@ -24,13 +24,14 @@ struct ProfileEditor: View {
         Divider()
         TextField("Username", text: $profile.username)
           .padding(.leading)
+          .autocorrectionDisabled()
+          .textInputAutocapitalization(.never)
       }
       
       Toggle(isOn: $profile.prefersNotifications) {
         Text("Enable Notifications")
           .bold()
-        Text("For landmark-related events")
-          
+        Text("For landmark-related events.")
       }
       
       VStack(alignment: .leading) {
