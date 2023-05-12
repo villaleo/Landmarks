@@ -15,12 +15,10 @@ struct ProfileSummary: View {
   var body: some View {
     ScrollView {
       VStack(alignment: .leading, spacing: 10) {
-        Text(profile.username)
+        Text("\(profile.username) \(profile.seasonalPhoto.rawValue)")
           .bold()
           .font(.title)
-        Text("Notifications: \(profile.prefersNotifications ? "On" : "Off")")
-        Text("Seasonal Photos: \(profile.seasonalPhoto.rawValue)")
-        Text("Goal Date: ") + Text(profile.goalDate, style: .date)
+        Text("Visit a Landmark by: ") + Text(profile.goalDate, style: .date).italic()
         Divider()
         
         VStack(alignment: .leading) {
