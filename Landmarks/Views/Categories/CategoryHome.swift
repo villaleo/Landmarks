@@ -20,6 +20,8 @@ struct CategoryHome: View {
         ForEach(modelData.categories.keys.sorted(), id: \.self) { key in
           CategoryRow(categoryName: key, items: modelData.categories[key]!)
         }
+        Spacer(minLength: 70)
+          .listRowSeparator(.hidden)
       }
       .listStyle(.inset)
       .navigationTitle("Featured")

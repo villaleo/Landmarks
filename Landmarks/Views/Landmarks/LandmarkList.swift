@@ -28,7 +28,10 @@ struct LandmarkList: View {
             LandmarkRow(landmark: landmark)
           }
         }
+        Spacer(minLength: 70)
+          .listRowSeparator(.hidden)
       }
+      .listStyle(.plain)
       .navigationTitle("Landmarks")
     }
   }
