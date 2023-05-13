@@ -42,6 +42,7 @@
 		52D0DD312A0F0D3F003BB3C2 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0DD302A0F0D3F003BB3C2 /* PageViewController.swift */; };
 		52D0DD332A0F122D003BB3C2 /* FeatureCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0DD322A0F122D003BB3C2 /* FeatureCard.swift */; };
 		52D0DD352A0F1471003BB3C2 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0DD342A0F1471003BB3C2 /* PageView.swift */; };
+		52D0DD372A0F364D003BB3C2 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0DD362A0F364D003BB3C2 /* PageControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 		52D0DD302A0F0D3F003BB3C2 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		52D0DD322A0F122D003BB3C2 /* FeatureCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCard.swift; sourceTree = "<group>"; };
 		52D0DD342A0F1471003BB3C2 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		52D0DD362A0F364D003BB3C2 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +238,7 @@
 				52D0DD322A0F122D003BB3C2 /* FeatureCard.swift */,
 				52D0DD302A0F0D3F003BB3C2 /* PageViewController.swift */,
 				52D0DD342A0F1471003BB3C2 /* PageView.swift */,
+				52D0DD362A0F364D003BB3C2 /* PageControl.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				52D0DCF72A0C77E2003BB3C2 /* ModelData.swift in Sources */,
 				52D0DD192A0D4C52003BB3C2 /* GraphCapsule.swift in Sources */,
 				52D0DCD82A0C6F75003BB3C2 /* MapView.swift in Sources */,
+				52D0DD372A0F364D003BB3C2 /* PageControl.swift in Sources */,
 				52D0DCFC2A0C7BF6003BB3C2 /* LandmarkList.swift in Sources */,
 				52D0DD222A0D817D003BB3C2 /* CategoryItem.swift in Sources */,
 				52D0DD1B2A0D4C52003BB3C2 /* HikeDetail.swift in Sources */,
