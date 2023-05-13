@@ -24,17 +24,29 @@ struct NavBar: View {
       HStack {
         ForEach(Tab.allCases, id: \.rawValue) { tab in
           Spacer()
-          Image(systemName: selectedTab == tab ? filledTabImage : tab.rawValue)
-            .scaleEffect(selectedTab == tab ? 1.5 : 1)
-            .onTapGesture {
-              withAnimation(.easeIn(duration: 0.25)) {
-                selectedTab = tab
-              }
+          VStack {
+            Image(systemName: selectedTab == tab ? filledTabImage : tab.rawValue)
+              .scaleEffect(selectedTab == tab ? 1.8 : 1.5)
+              .onTapGesture {
+                withAnimation(.easeIn(duration: 0.25)) {
+                  selectedTab = tab
+                }
             }
+            switch tab {
+            case .featured:
+              Text("Featured")
+                .font(.caption)
+                .padding(.top)
+            case .list:
+              Text("Landmarks")
+                .font(.caption)
+                .padding(.top)
+            }
+          }
           Spacer()
         }
       }
-      .frame(width: nil, height: 60)
+      .frame(width: nil, height: 80)
       .background(.thinMaterial)
       .cornerRadius(10)
       .padding()
