@@ -36,17 +36,17 @@ struct NavBar: View {
             case .featured:
               Text("Featured")
                 .font(.caption)
-                .padding(.top)
+                .padding(.top, 10)
             case .list:
               Text("Landmarks")
                 .font(.caption)
-                .padding(.top)
+                .padding(.top, 10)
             }
           }
           Spacer()
         }
       }
-      .frame(width: nil, height: 80)
+      .frame(width: nil, height: 70)
       .background(.thinMaterial)
       .cornerRadius(10)
       .padding()
