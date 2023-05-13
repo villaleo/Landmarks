@@ -43,6 +43,7 @@
 		52D0DD332A0F122D003BB3C2 /* FeatureCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0DD322A0F122D003BB3C2 /* FeatureCard.swift */; };
 		52D0DD352A0F1471003BB3C2 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0DD342A0F1471003BB3C2 /* PageView.swift */; };
 		52D0DD372A0F364D003BB3C2 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0DD362A0F364D003BB3C2 /* PageControl.swift */; };
+		52D0DD392A0F4D84003BB3C2 /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0DD382A0F4D84003BB3C2 /* NavBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +84,7 @@
 		52D0DD322A0F122D003BB3C2 /* FeatureCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCard.swift; sourceTree = "<group>"; };
 		52D0DD342A0F1471003BB3C2 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		52D0DD362A0F364D003BB3C2 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		52D0DD382A0F4D84003BB3C2 /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 				52D0DCD72A0C6F75003BB3C2 /* MapView.swift */,
 				52D0DCFF2A0CAFB6003BB3C2 /* FavoritesButton.swift */,
 				52D0DD032A0D3883003BB3C2 /* HexagonParameters.swift */,
+				52D0DD382A0F4D84003BB3C2 /* NavBar.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				52D0DD042A0D3883003BB3C2 /* HexagonParameters.swift in Sources */,
 				52D0DD272A0DC504003BB3C2 /* ProfileHost.swift in Sources */,
 				52D0DD132A0D4AF0003BB3C2 /* Hike.swift in Sources */,
+				52D0DD392A0F4D84003BB3C2 /* NavBar.swift in Sources */,
 				52D0DD0D2A0D44E4003BB3C2 /* RotatedBadgeSymbol.swift in Sources */,
 				52D0DD352A0F1471003BB3C2 /* PageView.swift in Sources */,
 				52D0DD0B2A0D4257003BB3C2 /* BadgeSymbol.swift in Sources */,
