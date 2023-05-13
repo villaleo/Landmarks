@@ -24,6 +24,7 @@ struct ContentView: View {
             .tag(Tab.featured)
         }
       }
+      .tint(.mint)
         
       VStack {
         Spacer()
