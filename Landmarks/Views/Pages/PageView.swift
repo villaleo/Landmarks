@@ -9,9 +9,10 @@ import SwiftUI
 
 struct PageView<Page: View>: View {
   var pages: [Page]
+  @State private var currentPageIndex = 0
   
   var body: some View {
-    PageViewController(pages: pages)
+    PageViewController(pages: pages, currentPageIndex: $currentPageIndex)
   }
 }
 
