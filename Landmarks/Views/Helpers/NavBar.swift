@@ -27,20 +27,23 @@ struct NavBar: View {
           VStack {
             Image(systemName: selectedTab == tab ? filledTabImage : tab.rawValue)
               .scaleEffect(selectedTab == tab ? 1.8 : 1.5)
-              .onTapGesture {
-                withAnimation(.easeIn(duration: 0.25)) {
-                  selectedTab = tab
-                }
-            }
+              .foregroundColor(selectedTab == tab ? .black : .secondary)
             switch tab {
             case .featured:
               Text("Featured")
                 .font(.caption)
+                .foregroundColor(selectedTab == tab ? .black : .secondary)
                 .padding(.top, 10)
             case .list:
               Text("Landmarks")
                 .font(.caption)
+                .foregroundColor(selectedTab == tab ? .black : .secondary)
                 .padding(.top, 10)
+            }
+          }
+          .onTapGesture {
+            withAnimation(.easeIn(duration: 0.25)) {
+              selectedTab = tab
             }
           }
           Spacer()
