@@ -19,6 +19,8 @@ struct NavBar: View {
     selectedTab.rawValue + ".fill"
   }
   
+  private static var lightGray = Color(uiColor: .lightGray)
+  
   var body: some View {
     VStack {
       HStack {
@@ -26,33 +28,35 @@ struct NavBar: View {
           Spacer()
           VStack {
             Image(systemName: selectedTab == tab ? filledTabImage : tab.rawValue)
+              .resizable()
+              .frame(width: 12.5, height: 12.5)
               .scaleEffect(selectedTab == tab ? 1.8 : 1.5)
-              .foregroundColor(selectedTab == tab ? .black : .secondary)
-            switch tab {
-            case .featured:
-              Text("Featured")
-                .font(.caption)
-                .foregroundColor(selectedTab == tab ? .black : .secondary)
-                .padding(.top, 10)
-            case .list:
-              Text("Landmarks")
-                .font(.caption)
-                .foregroundColor(selectedTab == tab ? .black : .secondary)
-                .padding(.top, 10)
-            }
+              .foregroundColor(selectedTab == tab ? ContentView.appPrimaryColor : Self.lightGray)
+            Text(textForSelected(tab))
+              .font(.caption)
+              .foregroundColor(selectedTab == tab ? ContentView.appPrimaryColor : Self.lightGray)
+              .padding(.top, 5)
           }
           .onTapGesture {
-            withAnimation(.easeIn(duration: 0.25)) {
+            withAnimation(.easeInOut(duration: 0.15)) {
               selectedTab = tab
             }
           }
+          .shadow(radius: selectedTab == tab ? 5 : 0)
           Spacer()
         }
       }
       .frame(width: nil, height: 70)
-      .background(.thinMaterial)
-      .cornerRadius(10)
-      .padding()
+      .background(.thickMaterial)
+    }
+  }
+  
+  private func textForSelected(_ tab: Tab) -> String {
+    switch tab {
+    case .featured:
+      return "Featured"
+    case .list:
+      return "Landmarks"
     }
   }
 }

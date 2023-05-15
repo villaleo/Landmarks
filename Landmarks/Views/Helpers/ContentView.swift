@@ -10,6 +10,8 @@ import SwiftUI
 struct ContentView: View {
   @State private var selectedTab: Tab = .list
   
+  static var appPrimaryColor = Color(hue: 345 / 360, saturation: 0.75, brightness: 1)
+  
   init() {
     UITabBar.appearance().isHidden = true
   }
@@ -24,11 +26,12 @@ struct ContentView: View {
             .tag(Tab.featured)
         }
       }
-      .tint(.mint)
-        
+      .tint(.black)
+      
       VStack {
         Spacer()
         NavBar(selectedTab: $selectedTab)
+          .frame(height: 35)
           .shadow(radius: 15)
       }
     }
