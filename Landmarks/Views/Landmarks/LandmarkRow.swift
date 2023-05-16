@@ -16,11 +16,15 @@ struct LandmarkRow: View {
         .resizable()
         .frame(width: 50, height: 50)
         .cornerRadius(3)
+        .shadow(radius: 2.5)
       Text(landmark.name)
       Spacer()
       if landmark.isFavorite {
         Image(systemName: "heart.fill")
-          .foregroundColor(.red)
+          .resizable()
+          .frame(width: 15, height: 15)
+          .shadow(radius: 2)
+          .foregroundColor(ContentView.appPrimaryColor)
       }
     }
   }

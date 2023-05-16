@@ -9,6 +9,7 @@ import SwiftUI
 
 struct LandmarkDetail: View {
   @EnvironmentObject var modelData: ModelData
+  @State private var tappedImage = false
   
   var landmark: Landmark
   var landmarkIndex: Int {
@@ -20,15 +21,23 @@ struct LandmarkDetail: View {
       MapView(coordinate: landmark.location)
         .ignoresSafeArea(edges: .top)
         .frame(height: 300)
+      
       CircleImage(image: landmark.image)
         .offset(y: -130)
         .padding(.bottom, -130)
-        
+        .scaleEffect(x: tappedImage ? 1.05 : 1, y: tappedImage ? 1.05 : 1)
+        .onTapGesture {
+          withAnimation(.easeOut(duration: 0.25)) {
+            tappedImage.toggle()
+          }
+        }
+      
       VStack(alignment: .leading) {
         HStack {
           Text(landmark.name)
             .font(.title)
           FavoritesButton(isSet: $modelData.landmarks[landmarkIndex].isFavorite)
+            .shadow(radius: 3)
         }
         
         HStack {

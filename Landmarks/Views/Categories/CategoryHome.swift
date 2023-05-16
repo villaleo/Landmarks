@@ -17,6 +17,11 @@ struct CategoryHome: View {
         PageView(pages: modelData.features.map { FeatureCard(landmark: $0) })
           .aspectRatio(3 / 2, contentMode: .fit)
           .listRowInsets(EdgeInsets())
+        Text("Categories")
+          .font(.title)
+          .fontWeight(.bold)
+          .padding(.top, 10)
+          .listRowSeparator(.hidden)
         ForEach(modelData.categories.keys.sorted(), id: \.self) { key in
           CategoryRow(categoryName: key, items: modelData.categories[key]!)
         }

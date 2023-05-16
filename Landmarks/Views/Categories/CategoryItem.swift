@@ -18,19 +18,19 @@ struct CategoryItem: View {
           .frame(width: 155, height: 155)
           .cornerRadius(5)
           .padding(.top)
-        
+          .shadow(radius: 3)
+      }
+      HStack {
         if item.isFavorite {
           Image(systemName: "heart.fill")
             .resizable()
-            .frame(width: 20, height: 20)
-            .foregroundColor(.red)
-            .shadow(radius: 5)
-            .offset(x: 155/2, y: -(155/2) + 10)
+            .frame(width: 10, height: 10)
+            .foregroundColor(ContentView.appPrimaryColor)
         }
+        Text(item.name)
+          .foregroundColor(.primary)
+          .font(.caption)
       }
-      Text(item.name)
-        .foregroundColor(.primary)
-        .font(.caption)
     }
     .padding(.leading, 15)
   }
