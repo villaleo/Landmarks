@@ -36,8 +36,9 @@ struct LandmarkDetail: View {
         HStack {
           Text(landmark.name)
             .font(.title)
-          FavoritesButton(isSet: $modelData.landmarks[landmarkIndex].isFavorite)
-            .shadow(radius: 3)
+          MarkAsFavorite(isSet: $modelData.landmarks[landmarkIndex].isFavorite)
+            .shadow(radius: modelData.landmarks[landmarkIndex].isFavorite ? 3: 0)
+            .padding(.leading, 3)
         }
         
         HStack {

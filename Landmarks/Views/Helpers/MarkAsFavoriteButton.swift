@@ -7,22 +7,25 @@
 
 import SwiftUI
 
-struct FavoritesButton: View {
+struct MarkAsFavorite: View {
   @Binding var isSet: Bool
   
   var body: some View {
     Button {
-      isSet.toggle()
+      withAnimation(.default) {
+        isSet.toggle()
+      }
     } label: {
       Label("Toggle Favorite", systemImage: isSet ? "heart.fill" : "heart")
         .labelStyle(.iconOnly)
         .foregroundColor(isSet ? .red : .gray)
+        .scaleEffect(x: isSet ? 1.5 : 1, y: isSet ? 1.5 : 1)
     }
   }
 }
 
-struct FavoritesButton_Previews: PreviewProvider {
+struct MarkAsFavoriteButton_Previews: PreviewProvider {
   static var previews: some View {
-    FavoritesButton(isSet: .constant(true))
+    MarkAsFavorite(isSet: .constant(true))
   }
 }
