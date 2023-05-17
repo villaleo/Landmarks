@@ -26,7 +26,7 @@ struct ContentView: View {
             .tag(Tab.featured)
         }
       }
-      .tint(.black)
+      .tint(Self.appPrimaryColor)
       
       VStack {
         Spacer()
