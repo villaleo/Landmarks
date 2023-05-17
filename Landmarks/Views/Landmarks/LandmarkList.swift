@@ -17,10 +17,13 @@ struct LandmarkList: View {
   
   var body: some View {
     NavigationStack {
+      ScrollView(.horizontal) {
+        TextPill(isOn: $onlyShowFavorites, text: "Show favorites")
+          .padding(.leading)
+          .padding(.top, 3)
+          .padding(.bottom, 3)
+      }
       List {
-        Toggle(isOn: $onlyShowFavorites) {
-          Text("Favorites only")
-        }
         ForEach(filteredLandmarks) { landmark in
           NavigationLink {
             LandmarkDetail(landmark: landmark)
