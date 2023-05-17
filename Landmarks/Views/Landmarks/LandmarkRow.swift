@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct LandmarkRow: View {
+  @Binding var onlyShowFavorites: Bool
+  
   var landmark: Landmark
   
   var body: some View {
@@ -21,11 +23,16 @@ struct LandmarkRow: View {
         if landmark.isFavorite {
           Image(systemName: "heart.fill")
             .resizable()
-            .frame(width: 10, height: 10)
+            .frame(
+              width: onlyShowFavorites ? 15 : 10,
+              height: onlyShowFavorites ? 15 : 10
+            )
             .shadow(radius: 2)
             .foregroundColor(ContentView.appPrimaryColor)
+            .offset(x: onlyShowFavorites ? 250 : 0)
         }
         Text(landmark.name)
+          .offset(x: onlyShowFavorites ? -20 : 0)
       }
       Spacer()
     }
@@ -35,7 +42,10 @@ struct LandmarkRow: View {
 struct LandmarkRow_Previews: PreviewProvider {
   static var landmarks = ModelData().landmarks
   static var previews: some View {
-    LandmarkRow(landmark: landmarks.first!)
-      .previewLayout(.fixed(width: 300, height: 70))
+    LandmarkRow(
+      onlyShowFavorites: .constant(true),
+      landmark: landmarks.first!
+    )
+    .previewLayout(.fixed(width: 300, height: 70))
   }
 }

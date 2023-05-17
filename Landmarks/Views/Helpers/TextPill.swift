@@ -17,7 +17,9 @@ struct TextPill: View {
   
   var body: some View {
     Button {
-      isOn.toggle()
+      withAnimation(.default) {
+        isOn.toggle()
+      }
     } label: {
       ZStack(alignment: .center) {
         if isOn {

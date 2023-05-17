@@ -37,12 +37,13 @@ struct NavBar: View {
               .foregroundColor(selectedTab == tab ? ContentView.appPrimaryColor : Self.lightGray)
               .padding(.top, 5)
           }
+          .shadow(radius: selectedTab == tab ? 3 : 0)
+          .offset(y: 5)
           .onTapGesture {
-            withAnimation(.easeInOut(duration: 0.15)) {
+            withAnimation(.default) {
               selectedTab = tab
             }
           }
-          .shadow(radius: selectedTab == tab ? 5 : 0)
           Spacer()
         }
       }
