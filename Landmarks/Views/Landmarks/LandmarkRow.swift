@@ -17,15 +17,17 @@ struct LandmarkRow: View {
         .frame(width: 50, height: 50)
         .cornerRadius(3)
         .shadow(radius: 2.5)
-      Text(landmark.name)
-      Spacer()
-      if landmark.isFavorite {
-        Image(systemName: "heart.fill")
-          .resizable()
-          .frame(width: 15, height: 15)
-          .shadow(radius: 2)
-          .foregroundColor(ContentView.appPrimaryColor)
+      HStack {
+        if landmark.isFavorite {
+          Image(systemName: "heart.fill")
+            .resizable()
+            .frame(width: 10, height: 10)
+            .shadow(radius: 2)
+            .foregroundColor(ContentView.appPrimaryColor)
+        }
+        Text(landmark.name)
       }
+      Spacer()
     }
   }
 }
