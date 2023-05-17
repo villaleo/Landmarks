@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52C2E0A92A14240600769301 /* TextPill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C2E0A82A14240600769301 /* TextPill.swift */; };
 		52D0DCC82A0C691F003BB3C2 /* LandmarksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0DCC72A0C691F003BB3C2 /* LandmarksApp.swift */; };
 		52D0DCCA2A0C691F003BB3C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0DCC92A0C691F003BB3C2 /* ContentView.swift */; };
 		52D0DCCC2A0C691F003BB3C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52D0DCCB2A0C691F003BB3C2 /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52C2E0A82A14240600769301 /* TextPill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextPill.swift; sourceTree = "<group>"; };
 		52D0DCC42A0C691F003BB3C2 /* Landmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Landmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D0DCC72A0C691F003BB3C2 /* LandmarksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksApp.swift; sourceTree = "<group>"; };
 		52D0DCC92A0C691F003BB3C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				52D0DCD52A0C6E54003BB3C2 /* CircleImage.swift */,
 				52D0DCD72A0C6F75003BB3C2 /* MapView.swift */,
 				52D0DCFF2A0CAFB6003BB3C2 /* FavoritesButton.swift */,
+				52C2E0A82A14240600769301 /* TextPill.swift */,
 				52D0DD032A0D3883003BB3C2 /* HexagonParameters.swift */,
 				52D0DD382A0F4D84003BB3C2 /* NavBar.swift */,
 			);
@@ -341,6 +344,7 @@
 				52D0DD352A0F1471003BB3C2 /* PageView.swift in Sources */,
 				52D0DD0B2A0D4257003BB3C2 /* BadgeSymbol.swift in Sources */,
 				52D0DD2D2A0EF943003BB3C2 /* ProfileEditor.swift in Sources */,
+				52C2E0A92A14240600769301 /* TextPill.swift in Sources */,
 				52D0DCFE2A0C7E79003BB3C2 /* LandmarkDetail.swift in Sources */,
 				52D0DD1C2A0D4C52003BB3C2 /* HikeView.swift in Sources */,
 				52D0DCC82A0C691F003BB3C2 /* LandmarksApp.swift in Sources */,
